@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.solution.eminent.eminentsolns">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <meta-data android:name="android.app.shortcuts"
+                    android:resource="@xml/shortcuts" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".employer"
+            android:label="Employer Login" />
+        <activity
+            android:name=".employee"
+            android:label="Employee Login" />
+        <activity
+            android:name=".createAc"
+            android:label="Create Account" />
+        <activity
+            android:name=".employerHome"
+            android:label="@string/title_activity_employer_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".employeeHome"
+            android:label="Employee Home" />
+        <activity
+            android:name=".addEmployee"
+            android:label="Add Employee" />
+        <activity android:name=".deleteEmployee" android:label="Delete Employee"></activity>
+    </application>
+
+</manifest>
